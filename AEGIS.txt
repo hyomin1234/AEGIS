@@ -1,0 +1,75 @@
+## **METHODOLOGY**
+
+**4.1. Overall Framework: Neuro-Symbolic Generative Sanitization**
+
+본 연구는 골든 레퍼런스(Golden Reference)가 부재한 제로 트러스트(Zero-Trust) 환경에서, 신뢰할 수 없는 외부 IP(Third-Party IP)에 내재된 하드웨어 트로이(HT)를 자동으로 무력화(Sanitize)하는 Neuro-Symbolic Generative Framework, AEGIS를 제안한다. 
+
+기존 연구들이 트로이의 존재 유무를 판별하는 '탐지(Detection)'에 머무르거나, 막대한 면적 오버헤드를 유발하는 하드웨어 중복(Redundancy) 기법에 의존했던 것과 달리, AEGIS는 탐지된 위협을 최소한의 수정(Minimal ECO)으로 제거하는 '치료(Remediation)'까지 자동화한다는 점에서 결정적인 차별성을 갖는다. 전체 파이프라인은 탐지(Eye), 계획(Brain), 검증(Judge)의 유기적인 피드백 루프(Closed-loop)로 구성된다.
+
+1. **Hypothesis Generation (GNN as an Eye):** 넷리스트의 그래프 구조(Topology)와 신호 전이 특성을 분석하여, 트로이 트리거(Trigger) 및 페이로드(Payload)로 의심되는 노드 군집을 국소화(Localization)한다.
+
+2. **Patch Planning (LLM as a Hand):** 식별된 위협을 논리적으로 격리(Isolate)하기 위해, LLM의 문맥 이해 및 추론 능력을 활용하여 기능 보존(Functionality-Preserving)이 보장된 최적의 ECO(Engineering Change Order) 스크립트를 생성한다.
+
+3. **Formal Verification (LEC/BMC as a Judge):** 생성된 패치에 대해 rTSE(Robust Trojan-Silence Equivalence) 검증을 수행하고, 반례(Counterexample) 발생 시 이를 LLM에 피드백하여 수정안을 반복적으로 정제(Refine)한다.
+
+**4.2. Phase 1: Function-Aware HT Localization via Multi-Head GNN**
+
+우리는 단순한 이진 분류(Binary Classification)를 넘어, 후속 단계인 LLM이 회로의 문맥을 이해할 수 있도록 돕는 **기능 인식형(Function-Aware) 탐지 모델**을 설계하였다. 이를 위해 기존 [ReIGNN, GNN-RE] 아키텍처를 확장한 Multi-Head GNN을 제안한다.
+
+• **Head A (Trojan Detector):** 노드 임베딩을 분석하여 각 게이트가 트로이의 일부일 확률(Probability)을 산출한다.
+
+• **Head B (Function Classifier):** 의심 서브그래프(Subgraph)가 회로 내에서 어떤 역할을 수행하는지 식별한다. 예를 들어, 해당 로직이 단순한 논리 게이트인지, 혹은 공격에 자주 악용되는 **핵심 구성요소(Primitive: Counter, Comparator, FSM)**인지를 다중 클래스로 분류한다.
+
+이러한 접근은 LLM에게 단순한 노드 인덱스뿐만 아니라 **"이것은 카운터 기반의 트리거이다"**라는 결정론적(Deterministic) 힌트를 제공함으로써, 생성형 모델의 고질적인 문제인 환각(Hallucination) 가능성을 원천적으로 억제한다.
+
+**4.3. Phase 2: Context-Aware ECO Planning via LLM (The Brain)**
+
+본 단계는 GNN이 국소화한 위협 서브그래프($G_{sub}$)를 입력받아, 이를 물리적으로 격리(Isolate)하는 최적의 수정 계획(Patch Plan)을 수립한다. **본 연구가 LLM을 핵심 엔진으로 채택한 이유는 기존 Rule-based 접근법의 한계를 극복하기 위함이며, 그 당위성은 다음과 같다.**
+
+**4.3.1. Why LLM? : Overcoming the Rigidity of Rules**
+
+기존의 자동 수정 도구들은 "패턴 A가 발견되면 B로 수정한다"와 같은 정적인 규칙(Static Rule)에 의존한다. 그러나 하드웨어 트로이는 공격자에 의해 무한한 변종(Variant)이 생성될 수 있으며(예: 트리거가 AND 게이트가 아닌 XOR 체인으로 구성된 경우), 복잡하게 얽힌 회로 문맥(Context) 속에서 단순한 규칙 적용은 정상 기능을 파괴할 위험이 크다.
+
+반면, LLM은 코드(Verilog/Tcl)의 **의미적 문맥(Semantic Context)**을 이해할 수 있다. 우리는 LLM을 단순한 텍스트 생성기가 아닌, **"불완전한 회로 상태를 입력받아 기능적으로 등가인 안전 상태로 변환하는 뉴럴 컴파일러(Neural Compiler)"**로 정의한다. LLM은 GNN이 제공한 구조적 정보와 주변 회로의 기능을 종합적으로 추론(Reasoning)하여, 변종 트로이에도 유연하게 대응 가능한 수정 전략을 도출한다.
+
+**4.3.2. Semantic Alignment: Bridging the Gap**
+
+GNN의 수치적 출력(Embedding Vector)과 LLM의 언어적 입력 사이의 간극(Semantic Gap)을 해소하기 위해, 우리는 **멀티모달 정렬(Multimodal Alignment)** 기법을 적용한다.
+
+• **Input ($G_{sub}$):** $\{Node_{14}(XOR), Node_{15}(DFF), \dots\}$
+
+• Transformed Prompt ($D_{text}$): "Detected subgraph is a 4-bit counter aimed at the Global Reset signal. Currently, specific inputs trigger a customized reset."
+
+이러한 텍스트 변환은 LLM에게 단순한 '위치 정보'가 아닌 **'공격의 의도(Intent)'**를 전달하여, 무조건적인 회로 절단(Cut)이 아닌 문맥에 맞는 정교한 수정(Refined Correction)을 유도한다.
+
+**4.3.3. Constrained Action Space & Chain-of-Thought**
+
+LLM의 자유도를 통제하여 실행 불가능한 코드 생성을 방지하기 위해, 행동 공간(Action Space, $\mathcal{A}$)을 산업 표준 Tcl 기반의 3가지 원자적 연산(Atomic Operations)으로 엄격히 제한한다.
+
+1. **CUT_TIE ($n_{target}, val$):** 트리거의 영향력이 명확할 때, 넷을 절단하고 안전 상수($0/1$)로 고정.
+
+2. **BYPASS ($g_{malicious}$):** 데이터 유출(Leakage) 경로의 경우, 버퍼로 대체하여 신호 흐름 유지.
+
+3. **ISOLATE ($n_{critical}, cond$):** 치명적 신호(Reset 등)가 오염된 경우, MUX를 삽입하여 조건부로 격리.
+
+LLM은 이 연산자들을 조합하여 다음과 같은 **Chain-of-Thought (CoT)** 과정을 거쳐 최종 Tcl 스크립트를 생성한다.
+
+[Reasoning] "This trigger controls the critical Reset line. Cutting it directly might leave the circuit floating. Therefore, I must use an isolation strategy."
+[Planning] "Insert a MUX. Select pin = Trigger signal (inverted). Input 0 = Original Reset. Input 1 = Safe Ground."
+[Generation] create_cell U_iso MUX2_X1; connect_net ...
+****
+
+**4.4. Phase 3: CEGIS-based Verification Loop (The Judge)**
+
+LLM이 생성한 패치의 신뢰성을 보장하기 위해, 우리는 **반례 유도형 정제(Counter-Example Guided Inductive Synthesis, CEGIS)** 루프를 도입한다. 이 단계는 수정된 회로가 **기능적 무결성(Functional Integrity)**과 **보안성(Security)**을 동시에 만족하는지 검증한다.
+
+• **Check A: Non-Regression Check (기능 보존 검증)**
+    ◦ **Goal:** 트로이가 활성화되지 않는 일반적인 상황에서, 원본 회로와 패치된 회로가 논리적으로 등가(Equivalence)인지 확인한다.
+    ◦ **Method:** `set_case_analysis 0`를 통해 트리거를 비활성화한 후 Sequential LEC를 수행한다.
+    ◦ **Feedback:** 불일치 발생 시(반례 $CE_{norm}$ 도출), 이는 GNN이 정상 로직을 트로이로 오판했거나 LLM이 과도한 수정을 가했음을 의미한다. 해당 정보를 피드백하여 수정 범위를 축소(Shrink)한다.
+• **Check B: Payload Silence Check (보안 검증)**
+    ◦ **Goal:** 트로이 트리거가 활성화되는 최악의 조건에서도, 주요 출력(PO)이나 핵심 레지스터가 안전 상태(Safe State)를 유지하는지 확인한다.
+    ◦ **Method:** 안전 속성(Safety Property)에 대해 Bounded Model Checking (BMC)을 수행한다.
+    ◦ **Feedback:** 보안 위배 발생 시(반례 $CE_{attk}$ 도출), 이는 패치가 불완전함을 의미하므로, LLM에게 더 강력한 격리 전략(예: 단순 MUX → 클럭 게이팅)을 요청한다.
+
+이 반복적 루프는 $rTSE$ 조건이 만족되거나 최대 반복 횟수에 도달할 때까지 수행되며, 이를 통해 AEGIS는 인간 엔지니어의 개입 없이도 **수학적으로 검증된(Formally Verified)** 보안 패치를 제공한다.
