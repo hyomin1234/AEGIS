@@ -1,0 +1,573 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version W-2024.09-SP3 for linux64 - Jan 07, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Tue Jan 20 07:14:35 2026
+Hostname:           dice
+CPU Model:          Intel(R) Xeon(R) Gold 6242R CPU @ 3.10GHz
+CPU Details:        Cores = 80 : Sockets = 2 : Cache Size = 36608 KB : Freq = 1.96 GHz
+OS:                 Linux 3.10.0-1160.el7.x86_64
+RAM:                251 GB (Free   5 GB)
+Swap:               255 GB (Free 255 GB)
+Work Filesystem:    /home mounted to /dev/sdb
+Tmp Filesystem:     / mounted to /dev/mapper/centos-root
+Work Disk:          7450 GB (Free 6878 GB)
+Tmp Disk:           7900 GB (Free 7893 GB)
+
+CPU Load: 1%, Ram Free: 5 GB, Swap Free: 255 GB, Work Disk Free: 6878 GB, Tmp Disk Free: 7893 GB
+set TOOL DC
+DC
+set STAGE syn
+syn
+source /home/suwankim/students/hyomin/CAD/scripts/main_Synopsys.tcl
+Running PRESTO HDLC
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/test_aes_128.v
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/table.v
+Warning:  /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/test_aes_128.v:83: delay controls are ignored for synthesis. (VER-176)
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/round.v
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/aes_128.v
+Presto compilation completed successfully.
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db'
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/standard.sldb'
+  Loading link library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_INVBUF_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading link library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'aes_128' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/aes_128.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       k0_reg        | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  26  |
+|       s0_reg        | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  26  |
+==================================================================================
+Presto compilation completed successfully. (aes_128)
+Module: aes_128, Ports: 385, Input: 257, Output: 128, Inout: 0
+Module: aes_128, Registers: 256, Async set/reset: 0, Sync set/reset: 0
+Information: Module aes_128 report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'aes_128'.
+Information: Building the design 'expand_key_128'. (HDL-193)
+
+Inferred memory devices in process in routine 'expand_key_128' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/aes_128.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       k2a_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  77  |
+|       k3a_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  77  |
+|       k0a_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  77  |
+|       k1a_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  77  |
+|      out_1_reg      | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  88  |
+==================================================================================
+Presto compilation completed successfully. (expand_key_128)
+Module: expand_key_128, Ports: 393, Input: 137, Output: 256, Inout: 0
+Module: expand_key_128, Registers: 256, Async set/reset: 0, Sync set/reset: 0
+Information: Module expand_key_128 report end. (ELAB-965)
+Information: Building the design 'one_round'. (HDL-193)
+
+Inferred memory devices in process in routine 'one_round' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/round.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    state_out_reg    | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  45  |
+==================================================================================
+Presto compilation completed successfully. (one_round)
+Module: one_round, Ports: 385, Input: 257, Output: 128, Inout: 0
+Module: one_round, Registers: 128, Async set/reset: 0, Sync set/reset: 0
+Information: Module one_round report end. (ELAB-965)
+Information: Building the design 'final_round'. (HDL-193)
+
+Inferred memory devices in process in routine 'final_round' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/round.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    state_out_reg    | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  78  |
+==================================================================================
+Presto compilation completed successfully. (final_round)
+Module: final_round, Ports: 385, Input: 257, Output: 128, Inout: 0
+Module: final_round, Registers: 128, Async set/reset: 0, Sync set/reset: 0
+Information: Module final_round report end. (ELAB-965)
+Information: Building the design 'S4'. (HDL-193)
+Presto compilation completed successfully. (S4)
+Module: S4, Ports: 65, Input: 33, Output: 32, Inout: 0
+Module: S4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module S4 report end. (ELAB-965)
+Information: Building the design 'table_lookup'. (HDL-193)
+Presto compilation completed successfully. (table_lookup)
+Module: table_lookup, Ports: 161, Input: 33, Output: 128, Inout: 0
+Module: table_lookup, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module table_lookup report end. (ELAB-965)
+Information: Building the design 'S'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'/home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/table.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     65     |    auto/auto     | always block at line 64 |
+===========================================================
+
+Inferred memory devices in process in routine 'S' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/table.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       out_reg       | Flip-flop |   8   |  Y  | N  | None  | None  | N  |  64  |
+==================================================================================
+Presto compilation completed successfully. (S)
+Module: S, Ports: 17, Input: 9, Output: 8, Inout: 0
+Module: S, Registers: 8, Async set/reset: 0, Sync set/reset: 0
+Information: Module S report end. (ELAB-965)
+Information: Building the design 'T'. (HDL-193)
+Presto compilation completed successfully. (T)
+Module: T, Ports: 41, Input: 9, Output: 32, Inout: 0
+Module: T, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module T report end. (ELAB-965)
+Information: Building the design 'xS'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'/home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/table.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    332     |    auto/auto     | always block at line 331 |
+============================================================
+
+Inferred memory devices in process in routine 'xS' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T400/src/TjFree/table.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       out_reg       | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 331  |
+==================================================================================
+Presto compilation completed successfully. (xS)
+Module: xS, Ports: 17, Input: 9, Output: 8, Inout: 0
+Module: xS, Registers: 8, Async set/reset: 0, Sync set/reset: 0
+Information: Module xS report end. (ELAB-965)
+Current design is 'aes_128'.
+
+  Linking design 'aes_128'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (9 designs)               /home/suwankim/students/hyomin/CAD/designs/AES_T400_TjFree/AES_T400_TjFree_util0.7_clk2.0/aes_128.db, etc
+  asap7sc7p5t_AO_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db
+  asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db
+  asap7sc7p5t_OA_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db
+  asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db
+  asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db
+
+Writing ddc file './data/01_syn_s/elab.ddc'.
+Clock source pin: clk
+Clock source pin (from variables.tcl): clk
+Reset pin: rst
+Reset pin (from variables.tcl): rst
+Clock target: 2000.0 ps
+Clock target (from variables.tcl): 2000.0 ps
+Warning: Can't find object 'rst' in design 'aes_128'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Warning: Can't find object 'rst' in design 'aes_128'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'rst' in design 'aes_128'. (UID-95)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Current design is 'aes_128'.
+Information: Uniquified 10 instances of design 'expand_key_128'. (OPT-1056)
+Information: Uniquified 9 instances of design 'one_round'. (OPT-1056)
+Information: Uniquified 14 instances of design 'S4'. (OPT-1056)
+Information: Uniquified 36 instances of design 'table_lookup'. (OPT-1056)
+Information: Uniquified 200 instances of design 'S'. (OPT-1056)
+Information: Uniquified 144 instances of design 'T'. (OPT-1056)
+Information: Uniquified 144 instances of design 'xS'. (OPT-1056)
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 1%, Ram Free: 4 GB, Swap Free: 255 GB, Work Disk Free: 6878 GB, Tmp Disk Free: 7893 GB
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.3 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.3 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra -no_autoungroup -no_boundary_optimization                           |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 315840                                 |
+| Number of User Hierarchies                              | 558                                    |
+| Sequential Cell Count                                   | 6848                                   |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 176128                                 |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1244 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'aes_128'
+
+  Loading target library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+LNC WARNING: Found output_to_output lib arc on HAxp5_ASAP7_75t_R.
+Loaded alib file './alib-52/asap7sc7p5t_AO_RVT_TT_nldm_211120.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_OA_RVT_TT_nldm_211120.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db.alib' (placeholder)
+Warning: Only placeholder alibs were found. Proceeding with library analysis. (OPT-1311)
+CPU Load: 1%, Ram Free: 4 GB, Swap Free: 255 GB, Work Disk Free: 6878 GB, Tmp Disk Free: 7893 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'aes_128'
+  Processing 'one_round_0'
+  Processing 'expand_key_128_8'
+  Processing 'one_round_8'
+  Processing 'expand_key_128_9'
+  Processing 'expand_key_128_0'
+  Processing 'expand_key_128_4'
+  Processing 'expand_key_128_1'
+  Processing 'expand_key_128_5'
+  Processing 'expand_key_128_2'
+  Processing 'expand_key_128_6'
+  Processing 'expand_key_128_3'
+  Processing 'expand_key_128_7'
+  Processing 'S_144'
+  Processing 'final_round'
+  Processing 'xS_0'
+  Processing 'table_lookup_0'
+  Processing 'table_lookup_35'
+  Processing 'S4_0'
+  Processing 'S4_13'
+  Processing 'T_0'
+  Processing 'T_143'
+CPU Load: 1%, Ram Free: 3 GB, Swap Free: 255 GB, Work Disk Free: 6878 GB, Tmp Disk Free: 7893 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIELOx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHIx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Warning: Only placeholder alibs were found. Proceeding with library analysis. (OPT-1311)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:33   12352.0      0.00       0.0     144.0                           8937248.0000
+    0:04:37   12352.0      0.00       0.0     144.0                           8937248.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:05:32   12203.9      0.00       0.0     144.0                           7331637.0000
+    0:05:32   12203.9      0.00       0.0     144.0                           7331637.0000
+    0:05:32   12203.9      0.00       0.0     144.0                           7331637.0000
+    0:05:33   12203.9      0.00       0.0     144.0                           7331637.0000
+    0:05:42   12201.7      0.00       0.0     144.0                           7330543.5000
+    0:05:47   12201.7      0.00       0.0     144.0                           7330543.5000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:06:08   12199.7      0.00       0.0     144.0                           7331474.0000
+    0:06:08   12199.7      0.00       0.0     144.0                           7331474.0000
+    0:06:08   12199.7      0.00       0.0     144.0                           7331474.0000
+    0:06:09   12199.7      0.00       0.0     144.0                           7331474.0000
+    0:06:09   12199.7      0.00       0.0     144.0                           7331474.0000
+    0:06:15   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:15   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:15   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:15   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:15   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:15   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:15   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+
+
+  Beginning Design Rule Fixing  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:16   12199.7      0.00       0.0     144.0                           7328159.5000
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+    0:06:20   12208.1      0.00       0.0       0.0                           7335527.0000
+    0:06:20   12208.1      0.00       0.0       0.0                           7335527.0000
+    0:06:20   12208.1      0.00       0.0       0.0                           7335527.0000
+    0:06:20   12208.1      0.00       0.0       0.0                           7335527.0000
+    0:06:20   12208.1      0.00       0.0       0.0                           7335527.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:32   12208.1      0.00       0.0       0.0                           7207702.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:35   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:40   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:40   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:40   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:47   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:52   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:52   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:52   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:52   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:52   12208.1      0.00       0.0       0.0                           7207702.0000
+    0:06:52   12208.1      0.00       0.0       0.0                           7207702.0000
+CPU Load: 1%, Ram Free: 3 GB, Swap Free: 255 GB, Work Disk Free: 6878 GB, Tmp Disk Free: 7893 GB
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'aes_128' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'r1/t0/t2/s0/clk': 6848 load(s), 1 driver(s)
+  Loading target library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+CPU Load: 1%, Ram Free: 3 GB, Swap Free: 255 GB, Work Disk Free: 6878 GB, Tmp Disk Free: 7893 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+Information: Updating graph... (UID-83)
+Warning: Design 'aes_128' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Writing ddc file './data/01_syn_s/compile.ddc'.
+Current design is 'aes_128'.
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -capacitance
+Design : aes_128
+Version: W-2024.09-SP3
+Date   : Tue Jan 20 07:22:33 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: s0_reg[122]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: r1/t0/t0/s0/out_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                          Cap      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  s0_reg[122]/CLK (DFFHQNx1_ASAP7_75t_R)              0.000000 # 0.000000 r
+  s0_reg[122]/QN (DFFHQNx1_ASAP7_75t_R)     6.170676  72.956497  72.956497 r
+  r1/t0/t0/s0/U9/Y (INVxp33_ASAP7_75t_R)    3.024187  54.851738  127.808235 f
+  r1/t0/t0/s0/U42/Y (NAND2xp33_ASAP7_75t_R) 3.034328  68.116173  195.924408 r
+  r1/t0/t0/s0/U43/Y (NOR2xp33_ASAP7_75t_R)  3.465969  69.858734  265.783142 f
+  r1/t0/t0/s0/U66/Y (NAND2xp33_ASAP7_75t_R) 1.210192  48.497742  314.280884 r
+  r1/t0/t0/s0/U67/Y (INVxp33_ASAP7_75t_R)   1.791014  38.564453  352.845337 f
+  r1/t0/t0/s0/U70/Y (AOI211xp5_ASAP7_75t_R) 1.005535  33.339722  386.185059 r
+  r1/t0/t0/s0/U75/Y (NAND4xp25_ASAP7_75t_R) 0.482009  24.958862  411.143921 f
+  r1/t0/t0/s0/U76/Y (NOR4xp25_ASAP7_75t_R)  1.355272  44.029236  455.173157 r
+  r1/t0/t0/s0/U376/Y (NAND4xp25_ASAP7_75t_R)
+                                            0.567232  27.504364  482.677521 f
+  r1/t0/t0/s0/U377/Y (OR4x1_ASAP7_75t_R)    0.535746  41.275909  523.953430 f
+  r1/t0/t0/s0/U380/Y (O2A1O1Ixp33_ASAP7_75t_R)
+                                            0.550727  19.461426  543.414856 r
+  r1/t0/t0/s0/U381/Y (A2O1A1Ixp33_ASAP7_75t_R)
+                                            0.544051  20.510254  563.925110 f
+  r1/t0/t0/s0/U382/Y (O2A1O1Ixp33_ASAP7_75t_R)
+                                            0.558822  21.021667  584.946777 r
+  r1/t0/t0/s0/out_reg[2]/D (DFFHQNx1_ASAP7_75t_R)     0.000000   584.946777 r
+  data arrival time                                              584.946777
+
+  clock clk (rise edge)                               2000.000000
+                                                                 2000.000000
+  clock network delay (ideal)                         0.000000   2000.000000
+  r1/t0/t0/s0/out_reg[2]/CLK (DFFHQNx1_ASAP7_75t_R)   0.000000   2000.000000 r
+  library setup time                                  -18.271856 1981.728149
+  data required time                                             1981.728149
+  --------------------------------------------------------------------------
+  data required time                                             1981.728149
+  data arrival time                                              -584.946777
+  --------------------------------------------------------------------------
+  slack (MET)                                                    1396.781372
+
+
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+Writing verilog file '/home/suwankim/students/hyomin/CAD/designs/AES_T400_TjFree/AES_T400_TjFree_util0.7_clk2.0/aes_128.netlist.v'.
+dc_shell> 
+Memory usage for this session 1138 Mbytes.
+Memory usage for this session including child processes 1138 Mbytes.
+CPU usage for this session 487 seconds ( 0.14 hours ).
+Elapsed time for this session 489 seconds ( 0.14 hours ).
+
+Thank you...

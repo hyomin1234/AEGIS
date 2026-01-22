@@ -1,0 +1,1170 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version W-2024.09-SP3 for linux64 - Jan 07, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Tue Jan 20 03:48:51 2026
+Hostname:           dice
+CPU Model:          Intel(R) Xeon(R) Gold 6242R CPU @ 3.10GHz
+CPU Details:        Cores = 80 : Sockets = 2 : Cache Size = 36608 KB : Freq = 1.20 GHz
+OS:                 Linux 3.10.0-1160.el7.x86_64
+RAM:                251 GB (Free   5 GB)
+Swap:               255 GB (Free 255 GB)
+Work Filesystem:    /home mounted to /dev/sdb
+Tmp Filesystem:     / mounted to /dev/mapper/centos-root
+Work Disk:          7450 GB (Free 6879 GB)
+Tmp Disk:           7900 GB (Free 7893 GB)
+
+CPU Load: 1%, Ram Free: 5 GB, Swap Free: 255 GB, Work Disk Free: 6879 GB, Tmp Disk Free: 7893 GB
+set TOOL DC
+DC
+set STAGE syn
+syn
+source /home/suwankim/students/hyomin/CAD/scripts/main_Synopsys.tcl
+Running PRESTO HDLC
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/Trojan_Trigger.v
+Warning:  /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/Trojan_Trigger.v:27: Redeclaration of port 'Tj_Trig'. (VER-331)
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/top.v
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/tb_AM.v
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/tbTOP.v
+Warning:  /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/tb_AM.v:64: delay controls are ignored for synthesis. (VER-176)
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/table.v
+Warning:  /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/tbTOP.v:99: delay controls are ignored for synthesis. (VER-176)
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/round.v
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/AM_Transmission.v
+Warning:  /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/AM_Transmission.v:59: the undeclared symbol 'beep1' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/AM_Transmission.v:60: the undeclared symbol 'beep2' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/AM_Transmission.v:61: the undeclared symbol 'beeps' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/AM_Transmission.v:62: the undeclared symbol 'MUX_Sel' assumed to have the default net type, which is 'wire'. (VER-936)
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/AES_tb.v
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/aes_128.v
+Warning:  /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/AES_tb.v:67: delay controls are ignored for synthesis. (VER-176)
+Presto compilation completed successfully.
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db'
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/standard.sldb'
+  Loading link library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_INVBUF_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading link library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (top)
+Module: top, Ports: 387, Input: 258, Output: 129, Inout: 0
+Module: top, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module top report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'top'.
+Information: Building the design 'aes_128'. (HDL-193)
+
+Inferred memory devices in process in routine 'aes_128' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/aes_128.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       k0_reg        | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  26  |
+|       s0_reg        | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  26  |
+==================================================================================
+Presto compilation completed successfully. (aes_128)
+Module: aes_128, Ports: 385, Input: 257, Output: 128, Inout: 0
+Module: aes_128, Registers: 256, Async set/reset: 0, Sync set/reset: 0
+Information: Module aes_128 report end. (ELAB-965)
+Information: Building the design 'Trojan_Trigger'. (HDL-193)
+Presto compilation completed successfully. (Trojan_Trigger)
+Module: Trojan_Trigger, Ports: 130, Input: 129, Output: 1, Inout: 0
+Module: Trojan_Trigger, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module Trojan_Trigger report end. (ELAB-965)
+Information: Building the design 'AM_Transmission'. (HDL-193)
+
+Inferred memory devices in process in routine 'AM_Transmission' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/AM_Transmission.v'.
+====================================================================================
+|     Register Name     |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+====================================================================================
+| Baud8GeneratorACC_reg | Flip-flop |  26   |  Y  | N  | None  | None  | N  |  32  |
+|     SHIFTReg_reg      | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  41  |
+====================================================================================
+Presto compilation completed successfully. (AM_Transmission)
+Module: AM_Transmission, Ports: 132, Input: 131, Output: 1, Inout: 0
+Module: AM_Transmission, Registers: 154, Async set/reset: 0, Sync set/reset: 0
+Information: Module AM_Transmission report end. (ELAB-965)
+Information: Building the design 'expand_key_128'. (HDL-193)
+
+Inferred memory devices in process in routine 'expand_key_128' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/aes_128.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       k2a_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  77  |
+|       k3a_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  77  |
+|       k0a_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  77  |
+|       k1a_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  77  |
+|      out_1_reg      | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  88  |
+==================================================================================
+Presto compilation completed successfully. (expand_key_128)
+Module: expand_key_128, Ports: 393, Input: 137, Output: 256, Inout: 0
+Module: expand_key_128, Registers: 256, Async set/reset: 0, Sync set/reset: 0
+Information: Module expand_key_128 report end. (ELAB-965)
+Information: Building the design 'one_round'. (HDL-193)
+
+Inferred memory devices in process in routine 'one_round' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/round.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    state_out_reg    | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  45  |
+==================================================================================
+Presto compilation completed successfully. (one_round)
+Module: one_round, Ports: 385, Input: 257, Output: 128, Inout: 0
+Module: one_round, Registers: 128, Async set/reset: 0, Sync set/reset: 0
+Information: Module one_round report end. (ELAB-965)
+Information: Building the design 'final_round'. (HDL-193)
+
+Inferred memory devices in process in routine 'final_round' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/round.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    state_out_reg    | Flip-flop |  128  |  Y  | N  | None  | None  | N  |  78  |
+==================================================================================
+Presto compilation completed successfully. (final_round)
+Module: final_round, Ports: 385, Input: 257, Output: 128, Inout: 0
+Module: final_round, Registers: 128, Async set/reset: 0, Sync set/reset: 0
+Information: Module final_round report end. (ELAB-965)
+Information: Building the design 'S4'. (HDL-193)
+Presto compilation completed successfully. (S4)
+Module: S4, Ports: 65, Input: 33, Output: 32, Inout: 0
+Module: S4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module S4 report end. (ELAB-965)
+Information: Building the design 'table_lookup'. (HDL-193)
+Presto compilation completed successfully. (table_lookup)
+Module: table_lookup, Ports: 161, Input: 33, Output: 128, Inout: 0
+Module: table_lookup, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module table_lookup report end. (ELAB-965)
+Information: Building the design 'S'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'/home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/table.v'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     65     |    auto/auto     | always block at line 64 |
+===========================================================
+
+Inferred memory devices in process in routine 'S' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/table.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       out_reg       | Flip-flop |   8   |  Y  | N  | None  | None  | N  |  64  |
+==================================================================================
+Presto compilation completed successfully. (S)
+Module: S, Ports: 17, Input: 9, Output: 8, Inout: 0
+Module: S, Registers: 8, Async set/reset: 0, Sync set/reset: 0
+Information: Module S report end. (ELAB-965)
+Information: Building the design 'T'. (HDL-193)
+Presto compilation completed successfully. (T)
+Module: T, Ports: 41, Input: 9, Output: 32, Inout: 0
+Module: T, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module T report end. (ELAB-965)
+Information: Building the design 'xS'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'/home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/table.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    332     |    auto/auto     | always block at line 331 |
+============================================================
+
+Inferred memory devices in process in routine 'xS' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/ht/AES/original/AES-T1700/src/TjIn/table.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       out_reg       | Flip-flop |   8   |  Y  | N  | None  | None  | N  | 331  |
+==================================================================================
+Presto compilation completed successfully. (xS)
+Module: xS, Ports: 17, Input: 9, Output: 8, Inout: 0
+Module: xS, Registers: 8, Async set/reset: 0, Sync set/reset: 0
+Information: Module xS report end. (ELAB-965)
+Current design is 'top'.
+
+  Linking design 'top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (12 designs)              /home/suwankim/students/hyomin/CAD/designs/AES_T1700_TjIn/AES_T1700_TjIn_util0.7_clk2.0/top.db, etc
+  asap7sc7p5t_AO_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db
+  asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db
+  asap7sc7p5t_OA_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db
+  asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db
+  asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db
+
+Writing ddc file './data/01_syn_s/elab.ddc'.
+Clock source pin: clk
+Clock source pin (from variables.tcl): clk
+Reset pin: rst
+Reset pin (from variables.tcl): rst
+Clock target: 2000.0 ps
+Clock target (from variables.tcl): 2000.0 ps
+Current design is 'top'.
+Information: Uniquified 10 instances of design 'expand_key_128'. (OPT-1056)
+Information: Uniquified 9 instances of design 'one_round'. (OPT-1056)
+Information: Uniquified 14 instances of design 'S4'. (OPT-1056)
+Information: Uniquified 36 instances of design 'table_lookup'. (OPT-1056)
+Information: Uniquified 200 instances of design 'S'. (OPT-1056)
+Information: Uniquified 144 instances of design 'T'. (OPT-1056)
+Information: Uniquified 144 instances of design 'xS'. (OPT-1056)
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 1%, Ram Free: 4 GB, Swap Free: 255 GB, Work Disk Free: 6879 GB, Tmp Disk Free: 7893 GB
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.3 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.3 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra -no_autoungroup -no_boundary_optimization                           |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 316157                                 |
+| Number of User Hierarchies                              | 561                                    |
+| Sequential Cell Count                                   | 7002                                   |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 176141                                 |
+| Number of Dont Touch Nets                               | 11                                     |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1374 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'top'
+
+  Loading target library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+LNC WARNING: Found output_to_output lib arc on HAxp5_ASAP7_75t_R.
+Loaded alib file './alib-52/asap7sc7p5t_AO_RVT_TT_nldm_211120.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_OA_RVT_TT_nldm_211120.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db.alib' (placeholder)
+Warning: Only placeholder alibs were found. Proceeding with library analysis. (OPT-1311)
+CPU Load: 1%, Ram Free: 4 GB, Swap Free: 255 GB, Work Disk Free: 6879 GB, Tmp Disk Free: 7893 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'aes_128'
+  Processing 'expand_key_128_0'
+  Processing 'expand_key_128_6'
+  Processing 'expand_key_128_1'
+  Processing 'expand_key_128_7'
+  Processing 'expand_key_128_2'
+  Processing 'expand_key_128_8'
+  Processing 'expand_key_128_3'
+  Processing 'expand_key_128_9'
+  Processing 'expand_key_128_4'
+  Processing 'final_round'
+  Processing 'expand_key_128_5'
+  Processing 'AM_Transmission'
+ Implement Synthetic for 'AM_Transmission'.
+  Processing 'xS_0'
+  Processing 'S4_0'
+  Processing 'T_0'
+  Processing 'T_143'
+  Processing 'S_144'
+  Processing 'table_lookup_35'
+  Processing 'one_round_0'
+  Processing 'top'
+  Processing 'one_round_8'
+  Processing 'Trojan_Trigger'
+ Implement Synthetic for 'Trojan_Trigger'.
+  Processing 'table_lookup_0'
+  Processing 'S4_13'
+CPU Load: 1%, Ram Free: 4 GB, Swap Free: 255 GB, Work Disk Free: 6879 GB, Tmp Disk Free: 7893 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	Tj_Trigger/add_x_1/*cell*6178/A Tj_Trigger/add_x_1/*cell*6178/Y Tj_Trigger/U59/A Tj_Trigger/U59/Y Tj_Trigger/U60/B Tj_Trigger/U60/Y 
+Information: Timing loop detected. (OPT-150)
+	Tj_Trigger/add_x_1/*cell*6177/A Tj_Trigger/add_x_1/*cell*6177/Y Tj_Trigger/U239/A Tj_Trigger/U239/Y Tj_Trigger/U240/B Tj_Trigger/U240/Y 
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U60'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U240'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'Tj_Trigger/U258'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U256'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U254'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U252'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U250'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U248'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U246'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U244'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U242'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U238'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U236'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U234'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U232'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U230'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U228'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U226'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U224'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U222'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U220'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U218'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U216'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U214'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U212'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U210'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U208'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U206'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U204'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U202'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U200'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U198'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U196'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U194'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U192'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U190'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U188'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U186'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U184'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U182'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U180'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U178'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U176'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U174'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U172'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U170'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U168'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U166'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U164'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U162'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U160'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U158'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U156'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U154'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U152'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U150'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U148'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U146'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U144'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U142'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U140'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U138'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U136'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U134'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U132'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U130'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U128'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U126'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U124'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U122'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U120'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U118'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U116'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U114'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U112'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U110'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U108'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U106'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U104'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U102'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U100'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U98'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U96'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U94'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U92'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U90'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U88'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U86'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U84'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U82'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U80'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U78'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U76'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U74'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U72'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U70'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U68'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U66'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U64'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U62'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U58'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U56'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U54'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U52'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U50'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U48'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U46'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U44'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U42'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U40'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U38'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U36'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U34'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U32'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U30'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U28'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U26'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U24'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U22'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U20'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U18'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U14'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U12'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U8'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U6'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U4'
+         to break a timing loop. (OPT-314)
+Information: The library cell 'TIELOx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHIx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'Trojan_Trigger'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'AM_Transmission'. (DDB-72)
+Warning: Only placeholder alibs were found. Proceeding with library analysis. (OPT-1311)
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:41   12485.9      0.00       0.0     144.0                           9073198.0000
+    0:04:45   12485.9      0.00       0.0     144.0                           9073198.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:05:42   12328.3      0.00       0.0     144.0                           7418243.5000
+    0:05:42   12328.3      0.00       0.0     144.0                           7418243.5000
+    0:05:42   12328.3      0.00       0.0     144.0                           7418243.5000
+    0:05:42   12328.3      0.00       0.0     144.0                           7418243.5000
+    0:05:52   12325.1      0.00       0.0     144.0                           7416333.5000
+    0:05:57   12325.1      0.00       0.0     144.0                           7416333.5000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:06:14   12323.1      0.00       0.0     144.0                           7417210.5000
+    0:06:19   12323.1      0.00       0.0     144.0                           7417210.5000
+    0:06:19   12323.1      0.00       0.0     144.0                           7417210.5000
+    0:06:19   12323.1      0.00       0.0     144.0                           7417210.5000
+    0:06:19   12323.1      0.00       0.0     144.0                           7417210.5000
+    0:06:19   12323.1      0.00       0.0     144.0                           7417210.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+
+
+  Beginning Design Rule Fixing  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:26   12322.4      0.00       0.0     144.0                           7412832.5000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:06:31   12330.8      0.00       0.0       0.0                           7420200.0000
+    0:06:31   12330.8      0.00       0.0       0.0                           7420200.0000
+    0:06:31   12330.8      0.00       0.0       0.0                           7420200.0000
+    0:06:31   12330.8      0.00       0.0       0.0                           7420200.0000
+    0:06:31   12330.8      0.00       0.0       0.0                           7420200.0000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:42   12330.8      0.00       0.0       0.0                           7290658.5000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:46   12330.8      0.00       0.0       0.0                           7290658.5000
+    0:06:54   12330.5      0.00       0.0       0.0                           7288452.5000
+    0:06:54   12330.5      0.00       0.0       0.0                           7288452.5000
+    0:06:54   12330.5      0.00       0.0       0.0                           7288452.5000
+    0:07:01   12330.5      0.00       0.0       0.0                           7288452.5000
+    0:07:05   12330.5      0.00       0.0       0.0                           7288397.5000
+    0:07:06   12330.5      0.00       0.0       0.0                           7288397.5000
+    0:07:06   12330.5      0.00       0.0       0.0                           7288397.5000
+    0:07:06   12330.5      0.00       0.0       0.0                           7288397.5000
+    0:07:06   12330.5      0.00       0.0       0.0                           7288397.5000
+    0:07:06   12330.5      0.00       0.0       0.0                           7288397.5000
+    0:07:06   12330.5      0.00       0.0       0.0                           7288397.5000
+CPU Load: 1%, Ram Free: 4 GB, Swap Free: 255 GB, Work Disk Free: 6879 GB, Tmp Disk Free: 7893 GB
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'AES/r1/t2/t0/s0/clk': 6874 load(s), 1 driver(s)
+  Loading target library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+CPU Load: 1%, Ram Free: 4 GB, Swap Free: 255 GB, Work Disk Free: 6879 GB, Tmp Disk Free: 7893 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+Information: Updating graph... (UID-83)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Timing loop detected. (OPT-150)
+	Tj_Trigger/U258/A Tj_Trigger/U258/Y 
+Information: Timing loop detected. (OPT-150)
+	Tj_Trigger/U143/A2 Tj_Trigger/U143/Y Tj_Trigger/U256/B Tj_Trigger/U256/Y 
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'Tj_Trigger/U258'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U256'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U254'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U252'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U250'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U248'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U246'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U244'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U242'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U240'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U238'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U236'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U234'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U232'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U230'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U228'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U226'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U224'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U222'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U220'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U218'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U216'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U214'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U212'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U210'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U208'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U206'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U204'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U202'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U200'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U198'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U196'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U194'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U192'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U190'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U188'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U186'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U184'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U182'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U180'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U178'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U176'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U174'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U172'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U170'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U168'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U166'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U164'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U162'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U160'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U158'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U156'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U154'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U152'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U150'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U148'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U146'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U144'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U142'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U140'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U138'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U136'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U134'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U132'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U130'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U128'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U126'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U124'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U122'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U120'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U118'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U116'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U114'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U112'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U110'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U108'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U106'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U104'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U102'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U100'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U98'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U96'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U94'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U92'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U90'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U88'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U86'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U84'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U82'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U80'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U78'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U76'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U74'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U72'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U70'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U68'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U66'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U64'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U62'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U60'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U58'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U56'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U54'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U52'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U50'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U48'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U46'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U44'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U42'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U40'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U38'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U36'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U34'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U32'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U30'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U28'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U26'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U24'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U22'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U20'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U18'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U14'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U12'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U10'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U8'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U6'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'Tj_Trigger/U4'
+         to break a timing loop. (OPT-314)
+Warning: Design 'top' inherited license information from design 'Trojan_Trigger'. (DDB-74)
+Information: Added key list 'DesignWare' to design 'top'. (DDB-72)
+Writing ddc file './data/01_syn_s/compile.ddc'.
+Current design is 'top'.
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -capacitance
+Design : top
+Version: W-2024.09-SP3
+Date   : Tue Jan 20 03:57:03 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: TSC/Baud8GeneratorACC_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: TSC/Baud8GeneratorACC_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                          Cap      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  TSC/Baud8GeneratorACC_reg[0]/CLK (DFFHQNx1_ASAP7_75t_R)
+                                                      0.000000 # 0.000000 r
+  TSC/Baud8GeneratorACC_reg[0]/QN (DFFHQNx1_ASAP7_75t_R)
+                                            1.602600  49.830605  49.830605 f
+  TSC/U547/Y (NAND3xp33_ASAP7_75t_R)        0.742998  17.150856  66.981461 r
+  TSC/U549/Y (INVxp33_ASAP7_75t_R)          0.810278  17.496735  84.478195 f
+  TSC/U550/Y (NAND2xp33_ASAP7_75t_R)        0.742998  21.893127  106.371323 r
+  TSC/U552/Y (INVxp33_ASAP7_75t_R)          0.810278  19.864960  126.236282 f
+  TSC/U553/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.619186  148.855469 r
+  TSC/U555/Y (INVxp33_ASAP7_75t_R)          0.810278  19.999969  168.855438 f
+  TSC/U556/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.660950  191.516388 r
+  TSC/U558/Y (INVxp33_ASAP7_75t_R)          0.810278  20.007736  211.524124 f
+  TSC/U559/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663345  234.187469 r
+  TSC/U561/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008194  254.195663 f
+  TSC/U562/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663498  276.859161 r
+  TSC/U564/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008209  296.867371 f
+  TSC/U565/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663483  319.530853 r
+  TSC/U567/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008209  339.539062 f
+  TSC/U568/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663483  362.202545 r
+  TSC/U570/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008209  382.210754 f
+  TSC/U571/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663483  404.874237 r
+  TSC/U573/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008209  424.882446 f
+  TSC/U574/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663483  447.545929 r
+  TSC/U576/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008209  467.554138 f
+  TSC/U577/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663483  490.217621 r
+  TSC/U579/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008209  510.225830 f
+  TSC/U580/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  532.889343 r
+  TSC/U582/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  552.897583 f
+  TSC/U583/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  575.561096 r
+  TSC/U585/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  595.569336 f
+  TSC/U586/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  618.232849 r
+  TSC/U588/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  638.241089 f
+  TSC/U589/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  660.904602 r
+  TSC/U591/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  680.912842 f
+  TSC/U592/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  703.576355 r
+  TSC/U594/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  723.584595 f
+  TSC/U595/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  746.248108 r
+  TSC/U597/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  766.256348 f
+  TSC/U598/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  788.919861 r
+  TSC/U600/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  808.928101 f
+  TSC/U601/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  831.591614 r
+  TSC/U603/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  851.599854 f
+  TSC/U604/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  874.263367 r
+  TSC/U606/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  894.271606 f
+  TSC/U607/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  916.935120 r
+  TSC/U609/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  936.943359 f
+  TSC/U610/Y (NAND2xp33_ASAP7_75t_R)        0.742998  22.663513  959.606873 r
+  TSC/U612/Y (INVxp33_ASAP7_75t_R)          0.810278  20.008240  979.615112 f
+  TSC/U613/Y (NAND2xp33_ASAP7_75t_R)        1.221413  28.346191  1007.961304 r
+  TSC/U615/Y (INVxp33_ASAP7_75t_R)          0.430571  17.828369  1025.789673 f
+  TSC/U616/Y (OAI221xp5_ASAP7_75t_R)        0.558822  24.525146  1050.314819 r
+  TSC/Baud8GeneratorACC_reg[25]/D (DFFHQNx1_ASAP7_75t_R)
+                                                      0.000000   1050.314819 r
+  data arrival time                                              1050.314819
+
+  clock clk (rise edge)                               2000.000000
+                                                                 2000.000000
+  clock network delay (ideal)                         0.000000   2000.000000
+  TSC/Baud8GeneratorACC_reg[25]/CLK (DFFHQNx1_ASAP7_75t_R)
+                                                      0.000000   2000.000000 r
+  library setup time                                  -22.192122 1977.807861
+  data required time                                             1977.807861
+  --------------------------------------------------------------------------
+  data required time                                             1977.807861
+  data arrival time                                              -1050.314819
+  --------------------------------------------------------------------------
+  slack (MET)                                                    927.493042
+
+
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+Writing verilog file '/home/suwankim/students/hyomin/CAD/designs/AES_T1700_TjIn/AES_T1700_TjIn_util0.7_clk2.0/top.netlist.v'.
+dc_shell> 
+Memory usage for this session 1142 Mbytes.
+Memory usage for this session including child processes 1142 Mbytes.
+CPU usage for this session 501 seconds ( 0.14 hours ).
+Elapsed time for this session 504 seconds ( 0.14 hours ).
+
+Thank you...

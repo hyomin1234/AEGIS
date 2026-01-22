@@ -4,8 +4,6 @@ __pycache__/
 *$py.class
 
 # Data directories (Important: huge files should not be committed)
-raw_data/
-output/
 data/
 
 # OS generated files

@@ -1,0 +1,30 @@
+#! /bin/bash -f
+
+## 01. Synthesis
+echo "01. Synthesis ..." > designstep
+date >> designstep
+runCAD -s syn
+
+## (Optional - design with hard macros)
+if [ $HM == 1 ]
+then
+	echo "(floorplan)" >> designstep
+	date >> designstep
+	
+	runCAD -s floorplan
+fi
+
+## 02. PnR
+echo "02. PnR ..." >> designstep
+date >> designstep
+runCAD -s pnr 
+
+## 03. STA
+echo "03. STA ..." >> designstep
+date >> designstep
+runCAD -s sta 
+
+
+#extract_result.tcl
+echo "END" >> designstep
+date >> designstep
