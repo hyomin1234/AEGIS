@@ -97,17 +97,25 @@ def _build_features(g: nx.DiGraph, node_dict: dict, add_centrality: bool):
 
 def _load_trojan_labels(trojan_path: Path, node_names: list) -> torch.Tensor:
     y = torch.zeros(len(node_names), dtype=torch.long)
-    if not trojan_path:
-        return y
-    trojan_set = {
-        line.strip()
-        for line in trojan_path.read_text(encoding="utf-8", errors="ignore").splitlines()
-        if line.strip()
-    }
     idx = {n: i for i, n in enumerate(node_names)}
-    for name in trojan_set:
-        if name in idx:
+
+    # 1. If trojan_path provided, load from file
+    if trojan_path and trojan_path.exists():
+        trojan_set = {
+            line.strip()
+            for line in trojan_path.read_text(encoding="utf-8", errors="ignore").splitlines()
+            if line.strip()
+        }
+        for name in trojan_set:
+            if name in idx:
+                y[idx[name]] = 1
+        return y
+
+    # 2. Fallback: Check if "trojan" is in the node name (Case-insensitive)
+    for name in node_names:
+        if "trojan" in name.lower():
             y[idx[name]] = 1
+            
     return y
 
 

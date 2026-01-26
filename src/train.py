@@ -100,6 +100,7 @@ def main():
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--no-class-weights", action="store_true")
     parser.add_argument("--save", default="aegis_gnn.pt")
+    parser.add_argument("--load-checkpoint", type=str, default=None, help="Path to pre-trained model checkpoint")
     args = parser.parse_args()
 
     data_dir = Path(args.data_dir).resolve()
@@ -122,6 +123,12 @@ def main():
         num_func_classes=args.func_classes,
         backbone=args.model,
     ).to(device)
+
+    if args.load_checkpoint:
+        print(f"Loading checkpoint from {args.load_checkpoint}...")
+        ckpt = torch.load(args.load_checkpoint, map_location=device)
+        model.load_state_dict(ckpt["model_state"])
+        print("Checkpoint loaded successfully.")
 
     if args.no_class_weights:
         trojan_w = None
